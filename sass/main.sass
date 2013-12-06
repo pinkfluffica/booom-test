@@ -1,0 +1,61 @@
+
+body
+    font-family: 'Lato', 'Tahoma', sans-serif
+    padding-top: 75px
+
+header
+    position: fixed
+    top: 0
+    width: 100%
+    padding-top: 15px
+    border-bottom: 1px solid #4795C9
+    background: #ffffff
+
+    a:link
+        text-decoration: none
+        color: #737C94
+
+    a:hover
+        text-decoration: none
+        color: #54C490
+
+    .container
+        width: 1170px
+        height: 60px
+        position: relative
+        margin-right: auto
+        margin-left: auto
+
+        ul
+            width: 600px
+            position: absolute
+            right: 0
+            top: 0
+            text-align: right
+
+        li
+            display: inline-block
+            margin: 10px
+
+
+@mixin button($background-color)
+    border-radius: 10px
+    text-align: center
+    margin: 10px 10px 10px 15px
+    padding: 10px
+    font-family: 'Lato', 'Tahoma', sans-serif
+    text-decoration: none
+    color: #ffffff
+    float: left
+    background-color: $background-color
+
+
+.section-intro
+    .button-main
+        +button(#54C490)
+
+    .button-sub1
+        +button(#2D465E)
+
+
+
